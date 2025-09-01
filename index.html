@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <title>Gautham Thiyagarajan</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #1f1f1f;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.5s ease, color 0.5s ease;
+    }
+    nav {
+      background-color: #272D33;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      transition: background-color 0.5s ease;
+    }
+    div.items {
+      font-size: 20px;
+      padding: 8px 15px;
+      color: #e0e0e0;
+      background-color: #272D33;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      user-select: none;
+    }
+    div.items:hover, div.items.starred {
+      background-color: #3c4045;
+      box-shadow: 0 4px 12px rgba(100,100,255,0.5);
+      opacity: 1;
+    }
+    a {
+      width: 18%;
+      text-align: center;
+      text-decoration: none;
+    }
+    .items.starred::before {
+      content: "🌟 ";
+      color: gold;
+      font-size: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
+      user-select: none;
+    }
+    .main-image {
+      display: block;
+      margin: 40px auto 30px;
+      width: 300px;
+      height: auto;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+      transition: transform 0.3s ease;
+    }
+    .main-image:hover {
+      transform: scale(1.05);
+    }
+    section {
+      padding: 100px 20px;
+      border-radius: 12px;
+      margin: 20px auto;
+      max-width: 900px;
+      transition: background-color 0.5s ease;
+    }
+    #home { background-color: #1f1f1f; }
+    #about { background-color: #2a2a2a; }
+    #awards { background-color: #333; }
+    #experience { background-color: #3d3d3d; }
+    #academics { background-color: #444; }
+    label {
+      font-size: 16px;
+      margin-left: 10px;
+      color: #e0e0e0;
+    }
+    input[type="color"] {
+      margin: 0 10px 0 5px;
+      padding: 0;
+      border: none;
+      width: 40px;
+      height: 28px;
+      vertical-align: middle;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    button#applyColors {
+      background-color: #272D33;
+      color: #e0e0e0;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+      margin-left: 15px;
+      vertical-align: middle;
+    }
+    button#applyColors:hover {
+      background-color: #3c4045;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#home"><div class="items">Gautham Thiyagarajan</div></a> 
+    <a href="#home"><div class="items">Home</div></a>
+    <a href="#about"><div class="items">About Me</div></a>
+    <a href="#awards"><div class="items">Awards</div></a>
+    <a href="#experience"><div class="items">Experience</div></a>
+    <a href="#academics"><div class="items">Academics</div></a>
+  </nav>
+
+  <img class="main-image" src="https://images.wondershare.com/filmora/article-images/funny-gif-stickers-whatsapp-20.jpg" alt="Funny Sticker">
+
+  <div style="text-align: center; margin: 20px;">
+    <label for="bgColorPicker">Background:</label>
+    <input type="color" id="bgColorPicker" value="#1f1f1f" />
+    <label for="fontColorPicker">Font:</label>
+    <input type="color" id="fontColorPicker" value="#e0e0e0" />
+    <button id="applyColors">Apply Colors</button>
+  </div>
+
+  <section id="home">
+    <h1>Welcome to My Website</h1>
+    <p>This is the Home section of the site. Scroll down to learn more!</p>
+  </section>
+
+  <section id="about">
+    <h1>About Me</h1>
+    <p>Hi, I’m Gautham Thiyagarajan! I’m a student with a passion for programming, design, and creating cool, meaningful projects—like this very website! I love exploring new technologies and finding creative ways to bring my ideas to life, whether through coding, UI/UX design, or interactive features. </p>
+    <p>Outside of tech, I’m an avid tennis player and proud member of my school’s tennis team. I also enjoy the strategic challenge of chess, and I frequently compete in both tennis and chess tournaments. Whether it's on the court, the board, or the keyboard, I love learning, improving, and pushing myself to grow. Thanks for visiting!</p>
+  </section>
+
+  <section id="awards">
+    <h1>Awards</h1>
+    <ul>
+      <li>Got the Excellence Award and Outstanding Student Award in 6th Grade</li>
+      <li>In 7th Grade I got the Principals Award for getting 90% and above on all my classes</li>
+      <li>I got the presidents award in 8th grade for getting the Principals Award in 7th and getting 90% and above on all my classes and the 7th grade STAAR</li>
+      <li>In my tennis tournaments I have recived a 1st, 2nd, 3rd, and Consolation Champ, (You get this by losing the first match but beat everyone else in the back draw), in many different tournaments and even got a 1st Place trophy for a tournament hosted by TNF 2024</li>
+      <li>I have also recived many awards in Chess. I got a first place medal for winning in the Frisco Swiss Tournament and got 2nd and 3rd place trophies in the Plano Swiss Tournaments</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h1>Experience</h1>
+    <p><b>All Star Code — Pong Game Project</b></p>
+    <p>Collaborative Project | JavaScript, HTML, CSS</p>
+    <p>Worked with peers to recreate the classic game Pong, focusing on responsive design, game logic, and user interaction. Strengthened skills in core web technologies while practicing collaboration and problem-solving.</p>
+    <hr />
+    <p><b>Personal Website</b></p>
+    <p>Solo Project | JavaScript, HTML, CSS</p>
+    <p>Designed and developed a personal portfolio website from scratch to showcase my projects and interests.</p>
+    <p>Emphasized clean UI/UX, responsive design, and code organization.</p>
+  </section>
+
+  <section id="academics">
+    <h1>Academics</h1>
+    <ul>
+      <li>Recognized with multiple awards for academic excellence and strong performance in core subjects</li>
+      <li>Completed AP Computer Science A and AP Human Geography</li>
+      <li>Preparing to take the PSAT and SAT later this academic year</li>
+    </ul>
+  </section>
+
+  <script>
+    function shadeColor(color, percent) {
+      let f = parseInt(color.slice(1), 16),
+          t = percent < 0 ? 0 : 255,
+          p = Math.abs(percent) / 100,
+          R = f >> 16,
+          G = (f >> 8) & 0x00FF,
+          B = f & 0x0000FF;
+      return "#" + (
+        0x1000000 +
+        (Math.round((t - R) * p) + R) * 0x10000 +
+        (Math.round((t - G) * p) + G) * 0x100 +
+        (Math.round((t - B) * p) + B)
+      ).toString(16).slice(1);
+    }
+
+    const nav = document.querySelector('nav');
+    nav.addEventListener('mouseover', function (event) {
+      const target = event.target.closest('.items');
+      if (target && !target.dataset.starred) {
+        target.classList.add('starred');
+        target.dataset.starred = 'true';
+      }
+    });
+    nav.addEventListener('mouseout', function (event) {
+      const target = event.target.closest('.items');
+      if (target && target.dataset.starred) {
+        target.classList.remove('starred');
+        delete target.dataset.starred;
+      }
+    });
+
+    const bgColorPicker = document.getElementById('bgColorPicker');
+    const fontColorPicker = document.getElementById('fontColorPicker');
+    const applyButton = document.getElementById('applyColors');
+
+    applyButton.addEventListener('click', () => {
+      const bgColor = bgColorPicker.value;
+      const fontColor = fontColorPicker.value;
+
+      document.body.style.backgroundColor = bgColor;
+      document.body.style.color = fontColor;
+      nav.style.backgroundColor = shadeColor(bgColor, -15);
+
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.style.backgroundColor = shadeColor(bgColor, -30);
+      });
+    });
+  </script>
+
+</body>
+</html>
